@@ -15,7 +15,7 @@ jobs:
           aws-region: eu-west-1
       - uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
-          command: aws s3 ls
+          command: ls
           source: ./local_file.txt
           destination: s3://yourbucket/folder/local_file.txt
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
